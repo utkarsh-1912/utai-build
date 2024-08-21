@@ -32,7 +32,7 @@ const Products = () => {
                 <span className="mb-2 block text-lg font-semibold text-yellow-700 dark:text-yellow-600">
                   Our Products
                 </span>
-                <h2 className="mb-3 text-2xl font-bold leading-tight text-white sm:text-4xl">
+                <h2 className="mb-3 text-2xl font-bold leading-tight gradient-title sm:text-4xl">
                   Tailored AI Solutions
                 </h2>
                 <p className="text-base text-gray-600 dark:text-gray-400">
