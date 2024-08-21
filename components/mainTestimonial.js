@@ -72,7 +72,7 @@ const MainTestimonial = () => {
                   />
                 </svg>
                 <blockquote>
-                  <p className="text-lg md:text-2xl font-medium text-gray-900 dark:text-white">
+                  <p className="text-lg md:text-2xl font-medium text-gray-200 dark:text-white">
                     "{testimonial.text}"
                   </p>
                 </blockquote>
@@ -83,7 +83,7 @@ const MainTestimonial = () => {
                     alt="profile picture"
                   />
                   <div className="flex flex-col md:flex-row items-center md:divide-x-2 divide-gray-500 dark:divide-gray-700">
-                    <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                    <div className="pr-3 font-medium text-gray-400 dark:text-white">
                       {testimonial.name}
                     </div>
                     <div className="md:pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
