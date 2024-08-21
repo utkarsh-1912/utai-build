@@ -8,10 +8,10 @@ const ServiceCard = ({ icon, title, details }) => {
             <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
               {icon}
             </div>
-            <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-yellow-600">
+            <h4 className="mb-[14px] text-2xl font-semibold text-yellow-600">
               {title}
             </h4>
-            <p className="text-body-color dark:text-gray-600">{details}</p>
+            <p className="text-body-color text-gray-600">{details}</p>
           </div>
         </div>
       </>
