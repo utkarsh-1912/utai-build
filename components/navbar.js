@@ -7,8 +7,8 @@ import Loader from "./loader";
 import Link from "next/link";
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
+  { name: 'Services', href: '/services' },
+  { name: 'Company', href: '/about' },
   { name: 'Products', href: '/projects' },
   { name: 'Contact', href: '/contact' },
 ];
