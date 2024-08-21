@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 128, 127, 127;
   --background-end-rgb: 255, 255, 255;
 }
 
@@ -12,7 +12,7 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 245, 180, 1;
   }
 }
 
@@ -30,4 +30,32 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  /* .bg-gradient{
+    background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  } */
+  .gradient{
+    @apply bg-gradient-to-b from-white via-yellow-300 to-orange-600;
+  }
+  .gradient-title{
+    @apply gradient text-transparent bg-clip-text;
+  }
+  .btn-yellow-light{
+    @apply bg-yellow-600 text-white hover:bg-yellow-500 transition duration-500;
+  }
+  /* Loader spinner animation */
+.loader {
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 }
