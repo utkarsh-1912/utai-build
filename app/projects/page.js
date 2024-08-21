@@ -1,11 +1,11 @@
 import MainCta from "@/components/mainCta";
-import Service from "@/components/services";
+import Products from "@/components/products";
 
 
 export default function Projects() {
   return (
     <main className="flex min-h-[70vh] flex-col items-center">
-      <Service/>
+      <Products/>
       <MainCta/>
     </main>
   );
