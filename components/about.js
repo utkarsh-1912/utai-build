@@ -16,10 +16,10 @@ const About = () => {
             <p className="text-lg text-gray-200 mb-8 sm:p-6">
               We are a cutting-edge AI Labs dedicated to revolutionizing the industry with innovative solutions.
               Our team of experts is passionate about leveraging artificial intelligence to create impactful and
-              transformative technologies.
+              transformative technological solutions.
             </p>
         <div className="bg-yellow-600 gap-16 items-center py-7 rounded p-1 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-10 lg:px-6">
-            <div className=" font-light text-gray-500 sm:text-lg dark:text-gray-200 px-3">
+            <div className=" font-light sm:text-lg text-gray-200 px-3">
               <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
                 We didn't reinvent the wheel
               </h2>

@@ -3,7 +3,7 @@ import ServiceCard from "./serviceCard";
 
 const Service = () => {
   return (
-    <section className="p-8 pb-12 pt-12 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section className="p-8 pb-12 pt-12 bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
