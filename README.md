@@ -1,4 +1,4 @@
-This is a project bootstrapped with [Utkristi.io](https://utkristi-io.netlify.com)
+This is a project bootstrapped with [Utkristi.io](https://utkristi-io.netlify.app)
 
 ## Getting Started
 
