@@ -29,7 +29,7 @@ const Products = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
-                <span className="mb-2 block text-lg font-semibold text-yellow-700 dark:text-yellow-600">
+                <span className="mb-2 block text-lg font-semibold text-yellow-600">
                   Our Products
                 </span>
                 <h2 className="mb-3 text-2xl font-bold leading-tight gradient-title sm:text-4xl">
@@ -56,12 +56,11 @@ const Products = () => {
           <div className="mt-8 text-center">
             <button
               onClick={() => setShowMore(!showMore)}
-              className="px-6 py-3 text-base font-semibold text-white bg-yellow-700 hover:bg-yellow-600 rounded-lg"
+              className="px-6 py-3 text-base font-semibold text-white bg-yellow-600 hover:bg-yellow-500 rounded-lg"
             >
-              {showMore ? "Show Less" : "Show More"}
+              {showMore ? `Show Less` : "Show More"}
             </button>
           </div>
-
         </div>
       </section>
 
