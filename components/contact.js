@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section className="w-[98vw] md:w-[80vw] relative z-10 overflow-hidden bg-black p-8 sm:p-14 md:p-20 dark:bg-dark lg:py-[120px]">
+      <section className="w-[98vw] md:w-[80vw] relative z-10 overflow-hidden bg-black p-8 sm:p-14 md:p-20 lg:py-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full md:px-4 lg:w-1/2 xl:w-6/12">
@@ -11,13 +11,13 @@ const Contact = () => {
                 <span className="gradient-title mb-4 block text-base font-semibold text-primary">
                   Contact Us
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Utkristi AI Labs aka <span className="gradient-title">UTAI</span> is a AI innovation labs under Utkristi LLC, a
+                  company under registration on 2024 with DPIIT, Government of India responsible
+                  for IT development and technology services.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -111,22 +111,25 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-yellow-600 p-6 shadow-lg sm:p-12">
+              <div className="relative rounded-lg bg-yellow-600 p-6 shadow-lg sm:p-12 text-black">
                 <form>
                   <ContactInputBox
                     type="text"
                     name="name"
                     placeholder="Your Name"
+                    required
                   />
                   <ContactInputBox
-                    type="text"
+                    type="email"
                     name="email"
                     placeholder="Your Email"
+                    required
                   />
                   <ContactInputBox
-                    type="text"
+                    type="number"
                     name="phone"
                     placeholder="Your Phone"
+                    required
                   />
                   <ContactTextArea
                     row="6"
