@@ -72,7 +72,7 @@ export default function Navbar() {
                 <img alt="Utkristi AI Labs" src="/logo-dark.png" className="h-12 w-auto" />
               </a>
             </div>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden sm:ml-6 sm:block sm:pt-2">
               <div className="flex space-x-4">
                 {navigation.map((item) => (
                   <a
