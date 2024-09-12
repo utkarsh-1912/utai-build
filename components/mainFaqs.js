@@ -44,7 +44,7 @@ const MainFaqs = () => {
                 onClick={() => toggleFAQ(index)}
               >
                 <h3 className="text-lg font-medium">{faq.question}</h3>
-                <span className={`transition-transform ${openIndex === index ? 'rotate-180' : 'rotate-90'}`}>
+                <span className={`transition-transform transition-300 ${openIndex === index ? 'rotate-180' : 'rotate-90'}`}>
                   {/* SVG for arrow */}
                   <svg
                     className="w-5 h-5 text-white"
