@@ -97,6 +97,7 @@ export default function Navbar() {
                       onClick={(e) => {
                         e.preventDefault();
                         console.log(searchQuery);
+                        setSearchQuery("");
                       }}
                     >
                       <MagnifyingGlassIcon className="h-4 w-4" />
@@ -171,6 +172,7 @@ export default function Navbar() {
                 onClick={(e) => {
                   e.preventDefault();
                   console.log(searchQuery);
+                  setSearchQuery("");
                 }}
               >
                 Search
