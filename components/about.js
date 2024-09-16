@@ -5,15 +5,15 @@ import Team from './team';
 const About = () => {
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>About Us | Utkristi AI Labs</title>
         <meta name="description" content="Learn more about our Utkristi AI Labs, our mission, and our team." />
-      </Head> */}
+      </Head>
       <main className="w-full bg-black min-h-screen p-0 max-w-screen-2xl">
         <div className="py-12 px-4 md:px-6 lg:px-8">
           <section className="text-center">
             <h1 className="text-4xl font-extrabold gradient-title mb-4">About Us</h1>
-            <p className="text-lg text-gray-200 mb-8 sm:p-6">
+            <p className="text-sm sm:text-lg text-gray-200 mb-8 sm:p-6">
               We are a cutting-edge AI Labs dedicated to revolutionizing the industry with innovative solutions.
               Our team of experts is passionate about leveraging artificial intelligence to create impactful and
               transformative technological solutions.
