@@ -66,7 +66,7 @@ const About = () => {
           </section>
 
           <section className="mt-12 text-center bg-yellow-600 rounded p-4 max-w-screen-xl mx-auto items-center">
-            <h2 className="text-3xl font-bold text-white mb-6">Meet the Team</h2>
+            <h2 className="text-3xl font-bold text-white mb-6">Meet Our Team</h2>
                 <Team/>
           </section>
         </div>
