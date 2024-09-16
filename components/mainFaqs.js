@@ -38,9 +38,9 @@ const MainFaqs = () => {
         </h2>
         <div className="w-[95vw] md:w-[85vw] mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-yellow-600 rounded">
+            <div key={index} className="border-b focus:border border-yellow-600 focus:rounded-sm">
               <button
-                className="w-full px-4 py-2 text-left text-white bg-yellow-600/50 flex justify-between items-center focus:outline-none"
+                className="w-full px-2 sm:px-4 py-2 text-left text-white focus:bg-yellow-600/50 flex justify-between items-center focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
                 <h3 className="text-lg font-medium">{faq.question}</h3>
