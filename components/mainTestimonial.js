@@ -49,7 +49,7 @@ const MainTestimonial = () => {
     <div className="py-8 mx-auto text-center lg:py-16 md:px-10 px-2">
       <div id="testimonial-carousel" className="relative w-full">
         {/* Carousel wrapper */}
-        <div className="relative min-h-[50vh] sm:min-h-80 overflow-hidden rounded-lg md:h-fit">
+        <div className="relative min-h-[60vh] sm:min-h-80 overflow-hidden rounded-lg md:h-fit shadow-md">
           {/* Carousel items */}
           {testimonials.map((testimonial, index) => (
             <div

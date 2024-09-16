@@ -118,7 +118,7 @@ export default function Navbar() {
                       href={item.href}
                       aria-current={currentItem === item ? "page" : undefined}
                       className={classNames(
-                        currentItem === item ? "btn-yellow-light" : "text-gray-300 hover:bg-gray-800/70 hover:text-white",
+                        currentItem === item ? "btn-yellow-light" : "text-gray-300 hover:bg-gray-800/60 hover:text-white",
                         "rounded-md px-3 py-2 text-sm font-medium"
                       )}
                     >
@@ -148,7 +148,7 @@ export default function Navbar() {
               href={item.href}
               aria-current={currentItem === item ? "page" : undefined}
               className={classNames(
-                currentItem === item ? "btn-yellow-light" : "text-gray-300 hover:bg-gray-800/70 hover:text-white",
+                currentItem === item ? "btn-yellow-light shadow-md shadow-yellow-600/50" : "text-gray-300 hover:bg-gray-800/60 hover:text-white",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >

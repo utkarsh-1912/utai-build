@@ -92,7 +92,7 @@ const Team = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`flex-shrink-0 ${slideWidth}`}
+              className={`flex-shrink-0 shadow-md ${slideWidth}`}
             >
               <div className="bg-white p-6 rounded-lg shadow-md min-h-[240px]"> {/* Adjust min-height as needed */}
                 <div className='relative w-36 h-36 bg-black rounded-full overflow-hidden mx-auto mb-4 border-4 border-yellow-600'>
@@ -120,7 +120,7 @@ const Team = () => {
           <div className="flex items-center space-x-2">
               <button
                 onClick={prevSlide}
-                className="p-2 bg-black text-white rounded-l"
+                className="p-2 bg-black text-white rounded-l shadow-lg"
               >
                 {/* <ChevronLeftIcon className="w-6 h-6" /> */}
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -130,7 +130,7 @@ const Team = () => {
               </button>
               <button
                 onClick={nextSlide}
-                className="p-2 bg-black text-white rounded-r"
+                className="p-2 bg-black text-white rounded-r shadow-lg"
               >
                 {/* <ChevronRightIcon className="w-6 h-6" /> */}
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

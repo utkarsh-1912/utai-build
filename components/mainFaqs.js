@@ -63,7 +63,7 @@ const MainFaqs = () => {
                 </span>
               </button>
               <div
-                className={`px-6 py-4 bg-gray-200 border-t-2 border-t-yellow-600 text-gray-900 ${openIndex === index ? 'block' : 'hidden'}`}
+                className={`px-6 py-4 bg-gray-200 border-t-2 border-t-yellow-600 text-left text-gray-900 ${openIndex === index ? 'block' : 'hidden'}`}
               >
                 {faq.answer}
               </div>
