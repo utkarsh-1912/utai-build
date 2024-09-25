@@ -3,7 +3,7 @@ import { useState } from 'react';
 const faqs = [
   {
     question: 'What is Utkristi AI Labs?',
-    answer: 'Utkristi AI Labs is a one of the innovation lab of Utkristi LLC dedicated to empowering businesses with advanced AI solutions for automation and data-driven decision-making.',
+    answer: 'Utkristi AI Labs is one of the innovation labs of Utkristi LLC dedicated to empowering businesses with advanced AI solutions for automation and data-driven decision-making.',
   },
   {
     question: 'How does your AI technology work?',
@@ -38,13 +38,18 @@ const MainFaqs = () => {
         </h2>
         <div className="w-[95vw] md:w-[85vw] mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b focus:border border-yellow-600 focus:rounded-sm">
+            <div 
+              key={index} 
+              className={`border-b transition-all duration-500 ${openIndex === index ? 'bg-yellow-600/30' : 'border-yellow-600 focus:rounded-sm'}`}
+            >
               <button
-                className="w-full px-3 sm:px-4 py-2 text-left text-white focus:bg-yellow-600/50 flex justify-between items-center focus:outline-none"
+                className={`w-full px-3 sm:px-4 py-2 text-left text-white flex justify-between items-center focus:outline-none ${
+                  openIndex === index ? 'bg-yellow-600/50' : ''
+                }`}
                 onClick={() => toggleFAQ(index)}
               >
                 <h3 className="text-lg font-medium">{faq.question}</h3>
-                <span className={`transition-transform transition-300 ${openIndex === index ? 'rotate-180' : 'rotate-90'}`}>
+                <span className={`transition-transform transform duration-300 ${openIndex === index ? 'rotate-180' : 'rotate-90'}`}>
                   {/* SVG for arrow */}
                   <svg
                     className="w-5 h-5 text-white"
@@ -63,9 +68,13 @@ const MainFaqs = () => {
                 </span>
               </button>
               <div
-                className={`px-6 py-4 bg-gray-200 border-t-2 border-t-yellow-600 text-left text-gray-900 ${openIndex === index ? 'block' : 'hidden'}`}
+                className={`overflow-y-auto transition-all ease-in-out duration-500 ${
+                  openIndex === index ? ' opacity-100' : 'max-h-0 opacity-0'
+                }`}
               >
-                {faq.answer}
+                <div className="px-6 py-4 bg-gray-200 text-left text-gray-900 border-t-2 border-t-yellow-600">
+                  {faq.answer}
+                </div>
               </div>
             </div>
           ))}
